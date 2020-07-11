@@ -1,4 +1,4 @@
-folder('teja/Rama/new') {
+folder('teja') {
     displayName('teja')
     description('Folder for project A')
 
