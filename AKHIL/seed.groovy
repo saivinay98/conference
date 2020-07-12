@@ -1,4 +1,4 @@
 folder('Akhil') {
     displayName('Akhil')
-    description('Folder for Akhil')
+    description('Folder Akhil')
 }
