@@ -31,8 +31,5 @@ pipelineJob("${JOB_FOLDER}/${JOB_NAME}") {
         }
 
     }
-
-
-
 }
 
