@@ -1,4 +1,8 @@
- folder('sravani') {
-    displayName('sravani')
-    description('Folder for sravani')
+pipelineJob('sravani') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('seed.groovy'))
+            sandbox()
+        }
+    }
 }
