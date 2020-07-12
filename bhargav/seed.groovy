@@ -1,8 +1,12 @@
-folder('Bhargav') {
-    displayName('Bhargav')
-    description('Folder for Bhargav')
+buildPipelineView('Proj BK') {
+    filterBuildQueue()
+    filterExecutors()
+    title('Project A CI Pipeline')
+    displayedBuilds(5)
+    selectedJob('project-A-compile')
+    alwaysAllowManualTrigger()
+    showPipelineParameters()
+    refreshFrequency(60)
 }
 
-folder('bhargav/testing') {
-    description('Folder containing all QA jobs for Bhargav')
-}
+

@@ -1,9 +1,3 @@
-JOB_FOLDER='Sample'
-
-JOB_NAME='Ram'
-
-
-
 folder(JOB_FOLDER)
 
 
@@ -41,9 +35,4 @@ pipelineJob("${JOB_FOLDER}/${JOB_NAME}") {
 
 
 }
-
-
-
-
-
 
