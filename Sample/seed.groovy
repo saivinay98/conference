@@ -1,8 +1,4 @@
-folder(JOB_FOLDER)
-
-
-
-pipelineJob("${JOB_FOLDER}/${JOB_NAME}") {
+pipelineJob("$Sample/$Ram}") {
 
 
 
@@ -26,13 +22,10 @@ pipelineJob("${JOB_FOLDER}/${JOB_NAME}") {
 
             sandbox()
 
-            script(readFileFromWorkspace("${JOB_FOLDER}/Jenkinsfile"))
+            script(readFileFromWorkspace("$Sample/Jenkinsfile"))
 
         }
 
     }
-
-
-
 }
 
