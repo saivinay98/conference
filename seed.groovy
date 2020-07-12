@@ -1,49 +1,23 @@
-JOB_FOLDER='Sample'
-
-JOB_NAME='Ram'
-
-
-
-folder(JOB_FOLDER)
-
-
-
-pipelineJob("${JOB_FOLDER}/${JOB_NAME}") {
-
-
-
-    displayName('Ram')
-
-    description('Sample Job to create pipeline Job')
-
-
-
-    logRotator{
-
-        daysToKeep(90)
-
+pipelinejob('Ak') {
+  agent any
+  stages {
+  stage('Build') {
+    steps {
+      sh 'echo "This is my first step"'
     }
-
-
-
-    definition {
-
-        cps {
-
-            sandbox()
-
-            script(readFileFromWorkspace("${JOB_FOLDER}/Jenkinsfile"))
-
-        }
-
+  }
+  stage('Test') {
+    steps{
+      sh 'echo "This is my Test step"'
     }
-
-
-
+  }
+  stage('Deploy') {
+    steps {
+      sh 'echo "This is my Deploy step"'
+    }
+  }
 }
-
-
-
+}
 
 
 
