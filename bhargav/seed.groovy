@@ -1,8 +1,8 @@
-buildPipelineView('Proj BK') {
+buildPipelineView('MUSTANG GT') {
     filterBuildQueue()
     filterExecutors()
-    title('Project A CI Pipeline')
-    displayedBuilds(5)
+    title('Project a CI pipeline')
+    displayedBuilds(1)
     selectedJob('project-A-compile')
     alwaysAllowManualTrigger()
     showPipelineParameters()
