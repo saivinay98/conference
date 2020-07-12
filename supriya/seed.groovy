@@ -1,4 +1,4 @@
-folder(Supriya) {
-    displayName(Supriya)
-    description(To create a folde)
+folder("Supriya") {
+    displayName("Supriya")
+    description("To create a folder")
 }
